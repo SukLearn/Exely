@@ -1,0 +1,3 @@
+had to use event listener to create
+color then card is reserved is taking from background color if we have white background it will be same as
+in example there wasn't any showcase of "оплата" usage (hovering, focus), so i added my own.
