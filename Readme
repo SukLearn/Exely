@@ -1,3 +1,4 @@
-had to use event listener to create
-color then card is reserved is taking from background color if we have white background it will be same as
-in example there wasn't any showcase of "оплата" usage (hovering, focus), so i added my own.
+color then card is reserved is taking from background color if we have white background it will be same as in task
+I added little transition of going different dimensions (phone, tablet).
+hr color wasn't given, so I used eyedropper (color picker) to take color from task
+To minimize using javascript, I used display:none;.

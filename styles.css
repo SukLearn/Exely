@@ -148,7 +148,7 @@ h1 {
 .card-content > a:first-child {
   position: absolute;
   top: 8.375rem;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
@@ -212,7 +212,7 @@ h1 {
 .card.reserved .triangle {
   display: none;
 }
-.card.reserved {
+.card.reserved img {
   opacity: 0.6;
 }
 .payment {
@@ -241,7 +241,7 @@ h1 {
   -moz-text-decoration-color: #ff4b77;
 }
 .payment a:active {
-  color: #d8003f;
+  opacity: 0.6;
 }
 @media (max-width: 1179px) {
   .container {
@@ -272,17 +272,28 @@ h1 {
     margin-top: 12.5rem;
   }
   .card-content > a:first-child {
-    top: 7rem;
-    font-size: 1.5em;
+    top: 6rem;
   }
   .description {
     top: 9.5rem;
+  }
+  .payment {
+    padding: 50px 0;
+    height: 130px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
     max-width: 400px;
+  }
+  .card-content > a:first-child {
+    top: 5.5rem;
+    font-size: 1rem;
+  }
+  .description {
+    top: 8.5rem;
+    font-size: 0.9rem;
   }
   .card {
     width: calc(100% - 60px);

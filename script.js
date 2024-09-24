@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".card");
   cards.forEach((card) => {
+    const priceButton = card.querySelector(".price-button");
     const bookButton = card.querySelector(".book-button");
     const payment = card.querySelector(".payment");
     let isReserved = false;
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (isReserved) {
           card.classList.add("reserved");
           payment.style.display = "block";
+          priceButton.style.display = "none";
         }
       });
     });
@@ -20,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
     card.addEventListener("click", () => {
       if (card.classList.contains("reserved")) {
         card.classList.remove("reserved");
-        payment.style.display = "block";
-
+        payment.style.display = "none";
+        priceButton.style.display = "flex";
         isReserved = false;
       }
     });

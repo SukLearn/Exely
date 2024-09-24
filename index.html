@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
-    />
+    >
     <link
       rel="shortcut icon"
       href="https://exely.com/local/templates/purpleprop/images/logos/logo-icon.svg"
       type="image/x-icon"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    >
+    <link rel="stylesheet" href="styles.css" >
     <title>Exely</title>
   </head>
   <body>
@@ -22,16 +22,37 @@
       <h1>Номера и цены</h1>
       <div class="cards">
         <div class="card" data-room="duplex">
-          <img src="images/hotel-room.avif" alt="Дуплекс" />
+          <img src="images/hotel-room.avif" class="image" alt="Дуплекс" >
           <div class="card-content">
-            <a href="#">Дуплекс</a>
+            <a href="#">Представительский люкс</a>
             <p class="description">
-              Эксклюзивный номер с панорамным видом на центр города Москвы".
+              Эксклюзивный номер с панорамным видом на центр города Москвы
             </p>
-            <hr />
+            <hr >
             <div class="price-button">
               <p class="price">
                 Цена за сутки от: <span class="digits">7 900</span>
+                <span class="ruble">₽</span>
+              </p>
+              <button class="book-button">Забронировать</button>
+            </div>
+            <div class="payment">
+              <p>Номер зарезервирован</p>
+              <p>Перейти к <a href="#">оплате</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-room="duplex">
+          <img src="images/hotel-room2.avif" class="image" alt="Дуплекс" >
+          <div class="card-content">
+            <a href="#">Дуплекс</a>
+            <p class="description">
+              Просторный двухкомнатный номер с шикарным видом на парк
+            </p>
+            <hr >
+            <div class="price-button">
+              <p class="price">
+                Цена за сутки от: <span class="digits">5 700</span>
                 <span class="ruble">₽</span>
               </p>
               <button class="book-button">Забронировать</button>
@@ -47,16 +68,16 @@
           <div class="triangle"></div>
         </div>
         <div class="card" data-room="duplex">
-          <img src="images/hotel-room.avif" alt="Дуплекс" />
+          <img src="images/hotel-room3.avif" class="image" alt="Дуплекс" >
           <div class="card-content">
-            <a href="#">Дуплекс</a>
+            <a href="#">Бизнес-люкс</a>
             <p class="description">
-              Эксклюзивный номер с панорамным видом на центр города Москвы".
+              Трёхкомнантый номер с панорамным видом на Москва-реку
             </p>
-            <hr />
+            <hr >
             <div class="price-button">
               <p class="price">
-                Цена за сутки от: <span class="digits">7 900</span>
+                Цена за сутки от: <span class="digits">4 900</span>
                 <span class="ruble">₽</span>
               </p>
               <button class="book-button">Забронировать</button>
@@ -66,35 +87,6 @@
               <p>Перейти к <a href="#">оплате</a></p>
             </div>
           </div>
-          <div class="best-price">
-            <p>Гарантия лучшей цены!</p>
-          </div>
-          <div class="triangle"></div>
-        </div>
-        <div class="card" data-room="duplex">
-          <img src="images/hotel-room.avif" alt="Дуплекс" />
-          <div class="card-content">
-            <a href="#">Дуплекс</a>
-            <p class="description">
-              Эксклюзивный номер с панорамным видом на центр города Москвы".
-            </p>
-            <hr />
-            <div class="price-button">
-              <p class="price">
-                Цена за сутки от: <span class="digits">7 900</span>
-                <span class="ruble">₽</span>
-              </p>
-              <button class="book-button">Забронировать</button>
-            </div>
-            <div class="payment">
-              <p>Номер зарезервирован</p>
-              <p>Перейти к <a href="#">оплате</a></p>
-            </div>
-          </div>
-          <div class="best-price">
-            <p>Гарантия лучшей цены!</p>
-          </div>
-          <div class="triangle"></div>
         </div>
       </div>
     </div>
