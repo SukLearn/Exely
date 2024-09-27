@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".card");
   cards.forEach((card) => {
-    const priceButton = card.querySelector(".price-button");
-    const bookButton = card.querySelector(".book-button");
-    const payment = card.querySelector(".payment");
+    const priceButton = card.querySelector(".card__price-button");
+    const bookButton = card.querySelector(".card__book-button");
+    const payment = card.querySelector(".card__payment");
     let isReserved = false;
 
     bookButton.addEventListener("click", (e) => {
