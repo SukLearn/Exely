@@ -14,83 +14,83 @@
       href="https://exely.com/local/templates/purpleprop/images/logos/logo-icon.svg"
       type="image/x-icon"
     >
-    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="./dist/styles.css" >
     <title>Exely</title>
   </head>
   <body>
     <div class="container">
-      <h1>Номера и цены</h1>
+      <h1 class="title">Номера и цены</h1>
       <div class="cards">
         <div class="card" data-room="duplex">
-          <img src="images/hotel-room.avif" class="image" alt="Дуплекс" >
-          <div class="card-content">
-            <a href="#">Представительский люкс</a>
-            <p class="description">
+          <img src="images/hotel-room.avif" class="card_image" alt="Представительский люкс" >
+          <div class="card__content">
+            <a href="#" class="card__class">Представительский люкс</a>
+            <p class="card__description">
               Эксклюзивный номер с панорамным видом на центр города Москвы
             </p>
-            <hr >
-            <div class="price-button">
-              <p class="price">
-                Цена за сутки от: <span class="digits">7 900</span>
-                <span class="ruble">₽</span>
+            <hr class="card__hr">
+            <div class="card__price-button">
+              <p class="card__price">
+                Цена за сутки от: <span class="card__digits">7 900</span>
+                <span class="card__ruble">₽</span>
               </p>
-              <button class="book-button">Забронировать</button>
+              <button class="card__book-button">Забронировать</button>
             </div>
-            <div class="payment">
+            <div class="card__payment">
               <p>Номер зарезервирован</p>
-              <p>Перейти к <a href="#">оплате</a></p>
+              <p>Перейти к <a href="#" class="pay">оплате</a></p>
             </div>
           </div>
         </div>
         <div class="card" data-room="duplex">
-          <img src="images/hotel-room2.avif" class="image" alt="Дуплекс" >
-          <div class="card-content">
-            <a href="#">Дуплекс</a>
-            <p class="description">
+          <img src="images/hotel-room2.avif" class="card_image" alt="Дуплекс" >
+          <div class="card__content">
+            <a href="#" class="card__class">Дуплекс</a>
+            <p class="card__description">
               Просторный двухкомнатный номер с шикарным видом на парк
             </p>
-            <hr >
-            <div class="price-button">
-              <p class="price">
-                Цена за сутки от: <span class="digits">5 700</span>
-                <span class="ruble">₽</span>
+            <hr class="card__hr">
+            <div class="card__price-button">
+              <p class="card__price">
+                Цена за сутки от: <span class="card__digits">5 700</span>
+                <span class="card__ruble">₽</span>
               </p>
-              <button class="book-button">Забронировать</button>
+              <button class="card__book-button">Забронировать</button>
             </div>
-            <div class="payment">
+            <div class="card__payment">
               <p>Номер зарезервирован</p>
-              <p>Перейти к <a href="#">оплате</a></p>
+              <p>Перейти к <a href="#" class="pay">оплате</a></p>
             </div>
           </div>
           <div class="best-price">
             <p>Гарантия лучшей цены!</p>
           </div>
-          <div class="triangle"></div>
+          <div class="best-price__triangle"></div>
         </div>
         <div class="card" data-room="duplex">
-          <img src="images/hotel-room3.avif" class="image" alt="Дуплекс" >
-          <div class="card-content">
-            <a href="#">Бизнес-люкс</a>
-            <p class="description">
-              Трёхкомнантый номер с панорамным видом на Москва-реку
+          <img src="images/hotel-room3.avif" class="card_image" alt="Бизнес-люкс" >
+          <div class="card__content">
+            <a href="#" class="card__class">Бизнес-люкс</a>
+            <p class="card__description">
+              Трёхкомнантый номер с панорамным видом на Москвы-реку
             </p>
-            <hr >
-            <div class="price-button">
-              <p class="price">
-                Цена за сутки от: <span class="digits">4 900</span>
-                <span class="ruble">₽</span>
+            <hr class="card__hr">
+            <div class="card__price-button">
+              <p class="card__price">
+                Цена за сутки от: <span class="card__digits">4 900</span>
+                <span class="card__ruble">₽</span>
               </p>
-              <button class="book-button">Забронировать</button>
+              <button class="card__book-button">Забронировать</button>
             </div>
-            <div class="payment">
+            <div class="card__payment">
               <p>Номер зарезервирован</p>
-              <p>Перейти к <a href="#">оплате</a></p>
+              <p>Перейти к <a href="#" class="pay">оплате</a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./dist/bundle.js"></script>
   </body>
 </html>

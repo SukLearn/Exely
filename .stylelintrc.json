@@ -1,0 +1,12 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "indentation": 2,
+      "no-empty-source": null,
+      "selector-class-pattern": null,
+      "media-feature-range-notation": null,
+      "declaration-block-no-shorthand-property-overrides": null,
+      "string-quotes": "double"
+    }
+  }
+  

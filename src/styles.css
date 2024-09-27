@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://marketplace.canva.com/EAFCO6pfthY/1/0/1600w/canva-blue-green-watercolor-linktree-background-F2CyNS5sQdM.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.25rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1180px;
+}
+
+.card {
+  box-shadow: 0 4px 8px #0000001a;
+  position: relative;
+  width: calc(33.333% - 20px);
+  height: 21.875rem;
+  margin: 0.625rem;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: default;
+  transition: transform 0.3s;
+  border-radius: 10px;
+
+}
+
+.card .card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      #4975a1 10%,
+      #4975a1 25%,
+      transparent 25%
+    ),
+    linear-gradient(to bottom, transparent 10%, #0a2240 100%);
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100vw, center;
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__book-button {
+  background-color: #f91155;
+  color: #fff;
+  border: none;
+  padding: 0.825rem 1.225rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 5px;
+
+}
+
+.card__book-button:hover {
+  background-color: #d8003f;
+}
+
+.card__book-button:active {
+  color: #d86d7c;
+}
+
+.card__price-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 170%;
+}
+
+.card__price {
+  width: 115px;
+}
+
+.card__digits {
+  font-size: 1.25rem;
+  color: #ff4b77;
+}
+
+.card__ruble {
+  color: #8a8b8e;
+  font-size: 1.25rem;
+}
+
+.best-price {
+  position: absolute;
+  width: 195px;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 3;
+  color: white;
+  background-color: #ff7647;
+  padding: 0.3125rem 0.625rem;
+  display: none;
+  font-weight: 600;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  background: radial-gradient(
+    circle 20px at calc(100% - 18px) 12px,
+    transparent 5px,
+    #ff7647 6px
+  );
+}
+
+.best-price__triangle {
+  display: none;
+  position: absolute;
+  right: calc(100% - 221px);
+  top: 32px;
+  width: 16px;
+  height: 16px;
+  background-color: #ff7647;
+  z-index: 2;
+  transform: translateY(-50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+.card:hover .best-price,
+.card:hover .best-price__triangle {
+  display: block;
+}
+
+.card__hr {
+  border: none;
+  height: 1px;
+  background-color: #647487;
+  margin-top: 15rem;
+}
+
+
+
+.card__class {
+  position: absolute;
+  top: 8.375rem;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+}
+
+.card__class:hover {
+  border-bottom: 2px solid white;
+}
+
+.card__class:active {
+  color: #bbc0c4;
+  border: none;
+}
+
+.card__description {
+  position: absolute;
+  top: 11.5rem;
+  text-align: left;
+}
+
+
+
+
+.card.reserved .best-price,
+.card.reserved .best-price__triangle {
+  display: none;
+}
+
+.card.reserved .card_image {
+  opacity: 0.6;
+}
+
+.card__payment {
+  display: none;
+  position: absolute;
+  text-align: center;
+  padding: 25px 0;
+  bottom: 0;
+  left: 50%;
+  width: 350px;
+  height: 90px;
+  background-color: #3c3e43;
+  transform: translateX(-50%);
+
+}
+
+.card__payment .pay {
+  color: #ff4b77;
+  text-decoration: none;
+}
+
+.card__payment .pay:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff4b77;
+}
+
+.card__payment .pay:active {
+  opacity: 0.6;
+}
+
+@media (max-width: 1179px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+    transition: width 0.5s ease;
+
+  }
+
+  .card__book-button {
+    width: 100%;
+    padding: 0.825rem 0.225rem;
+  }
+
+  .card__price {
+    position: absolute;
+    top: 225px;
+  }
+
+  .card__hr {
+    margin-top: 12.5rem;
+  }
+
+  .card__class {
+    top: 6rem;
+  }
+
+  .card__description {
+    top: 9.5rem;
+  }
+
+  .card__payment {
+    padding: 50px 0;
+    height: 130px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 400px;
+  }
+
+  .card__class {
+    top: 5.5rem;
+    font-size: 1rem;
+  }
+
+  .card__description {
+    top: 8.5rem;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: calc(100% - 60px);
+    transition: width 0.5s ease;
+
+  }
+}
